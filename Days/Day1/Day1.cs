@@ -83,6 +83,11 @@ namespace AdventOfCode2016.Days
                     distance--;
                 }
             }
+
+            if (location is null){
+                throw new Exception("No location found.");
+            }
+
             int distance1 = Math.Abs(walker.X) + Math.Abs(walker.Y);
             Console.WriteLine($"Easter Bunny HQ is {distance1} blocks away.");
 
